@@ -1,0 +1,10 @@
+/backedn/.env
+/backend/__pycache__/
+/backend/*.pyc
+/backend/*.pyo
+/backend/*$py.class
+/backend/local_settings.py
+/backend/db.sqlite3
+/backend/media/
+/backend/staticfiles/
+/backend/venv/
