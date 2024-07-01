@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import axios from 'axios';
 import { useRouter } from 'next/navigation'; // Asegúrate de importar useRouter desde 'next/router'
-import Edit from '../devices/forms/edit';
+// import Edit from '../devices/forms/edit';
 
 const Login = () => {
   const [username, setUsername] = useState('');
@@ -58,12 +58,12 @@ const Login = () => {
           />
           <button className='bg-slate-950 rounded-md p-2 mx-auto block' onClick={handleSubmit}>Login</button>
         </form>
-        <Edit
-          isOpen={isModalOpen}
-          closeModal={() => setIsModalOpen(!isModalOpen)}
+        {/* <Edit */}
+        {/*   isOpen={isModalOpen} */}
+        {/*   closeModal={() => setIsModalOpen(!isModalOpen)} */}
 
 
-        />
+        {/* /> */}
       </div>
     </div>
   );
