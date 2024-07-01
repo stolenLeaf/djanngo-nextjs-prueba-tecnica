@@ -28,6 +28,10 @@ const Create = () => {
     setDeviceStatus(!deviceStatus)
   }
 
+  const handleLogs = () => {
+    router.push('/Logs')
+  }
+
   return (
     <div className='bg-slate-200 p-10 rounded-md'>
       <h1 className='text-black font-bold'>Create Device</h1>
@@ -38,9 +42,10 @@ const Create = () => {
           <input type='checkbox' name='status' onChange={handleCheck} checked={deviceStatus} />
           <span className='ml-2 text-black'> Status</span>
         </label>
-        <button className='bg-indigo-500 w-full rounded-md p-2 block'>Create</button>
+        <button className='bg-indigo-500 w-full rounded-md m-2 p-2 block'>Create</button>
       </form>
-    </div>
+      <button className='bg-yellow-500 w-full rounded-md m-2 p-2 block' onClick={() => handleLogs()}>Logs</button>
+    </div >
   )
 }
 export default Create
