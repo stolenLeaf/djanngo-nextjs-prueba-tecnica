@@ -1,5 +1,7 @@
 import Login from "./components/login/form";
 
+export const dynamic = 'force-dynamic'
+
 const HomePage = () => {
 
 
